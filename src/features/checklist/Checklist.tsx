@@ -36,7 +36,11 @@ export default function Checklist() {
             <input
                 type="text"
                 value={newTask}
-                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setNewTask((e.target as HTMLInputElement).value)}
+                onChange={(e) => {
+                    const value = (e.target as HTMLInputElement).value;
+                    setNewTask(value);
+                    console.log(value); 
+                }}
                 placeholder="Add a new task"
             />
             <button onClick={addTask}>Add</button>

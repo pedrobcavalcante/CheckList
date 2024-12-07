@@ -5,7 +5,7 @@
     "noEmitOnError": true,
     "target": "esnext",
     "module": "esnext",
-    "lib": ["esnext"],
+    "lib": ["es2015", "dom"],
     "jsx": "react-native",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,

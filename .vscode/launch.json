@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Edge and Debug (Expo)",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:8081", // A URL onde o Expo Web está rodando
+      "webRoot": "${workspaceFolder}/src", // Ou o caminho correto para a pasta do seu código-fonte
+      "sourceMaps": true,
+      "preLaunchTask": "npm: start" // Inicia o Expo automaticamente antes da depuração
+    }
+  ]
+}
