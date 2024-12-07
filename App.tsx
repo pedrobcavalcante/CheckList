@@ -1,11 +1,13 @@
-import { Provider } from "react-redux";
+/** @jsxImportSource @emotion/react */
+import { Global } from "@emotion/react";
+import { globalStyles } from "./src/styles/global";
 import AppRoutes from "./src/routes";
-import store from "./src/store";
 
 export default function App() {
   return (
-    <Provider store={store}>
+    <>
+      <Global styles={globalStyles} />
       <AppRoutes />
-    </Provider>
+    </>
   );
 }
