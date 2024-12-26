@@ -21,7 +21,7 @@ export default function Checklist() {
 
     return (
         <div css={containerStyle}>
-            <h1>My Checklist</h1>
+
             <div css={inputContainerStyle}>
                 <input
                     type="text"
