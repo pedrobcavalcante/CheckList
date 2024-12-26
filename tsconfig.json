@@ -1,16 +1,16 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true,
-    "noEmitOnError": true,
     "target": "esnext",
     "module": "esnext",
-    "lib": ["es2015", "dom"],
-    "jsx": "react-native",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src/**/*",
+    "index.tsx"
+  ],
+  "extends": "expo/tsconfig.base"
 }

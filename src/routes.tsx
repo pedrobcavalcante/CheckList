@@ -1,14 +1,12 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/login";
 import ChecklistPage from "./pages/ChecklistPage";
-export default function AppRoutes(): JSX.Element {
+
+export default function AppRoutes() {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route
-                    path="/"
-                    element={<ChecklistPage />}
-                />
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/checklist" element={<ChecklistPage />} />
+        </Routes>
     );
 }
