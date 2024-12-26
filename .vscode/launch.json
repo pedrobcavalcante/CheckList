@@ -2,13 +2,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch Edge and Debug (Expo)",
-      "type": "msedge",
+      "type": "node-terminal",
       "request": "launch",
-      "url": "http://localhost:8081", // A URL onde o Expo Web está rodando
-      "webRoot": "${workspaceFolder}/src", // Ou o caminho correto para a pasta do seu código-fonte
-      "sourceMaps": true,
-      "preLaunchTask": "npm: start" // Inicia o Expo automaticamente antes da depuração
+      "name": "Start React App",
+      "command": "npm start",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug in Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/src"
     }
   ]
 }
