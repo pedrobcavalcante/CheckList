@@ -8,6 +8,7 @@ import {
   formStyle,
   inputStyle,
   buttonStyle,
+  titleStyle,
 } from "./LoginForm.styles";
 
 export default function LoginForm() {
@@ -26,7 +27,7 @@ export default function LoginForm() {
         <div css={imageSectionStyle}></div>
         <div css={formSectionStyle}>
           <form onSubmit={handleLogin} css={formStyle}>
-            <h1>Login</h1>
+            <h1 css={titleStyle}>Login</h1>
             <input
               type="email"
               placeholder="Email"
