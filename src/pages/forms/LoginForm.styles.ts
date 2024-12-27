@@ -60,29 +60,3 @@ export const titleStyle = css`
   font-size: 3rem;
   color: #0077cc;
 `;
-export const inputStyle = css`
-  max-width: 200px;
-  min-width: 50px;
-  margin-bottom: 1rem;
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 32px;
-  font-size: 1rem;
-  background-color: #f0f0f0;
-`;
-export const buttonStyle = css`
-  width: 100%;
-  max-width: 200px;
-  min-width: 50px;
-  padding: 0.8rem 1.5rem;
-  background-color: #0077cc;
-  color: #fff;
-  border: none;
-  border-radius: 32px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
-  &:hover {
-    background-color: #005fa3;
-  }
-`;

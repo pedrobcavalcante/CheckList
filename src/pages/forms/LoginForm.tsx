@@ -6,10 +6,10 @@ import {
   imageSectionStyle,
   formSectionStyle,
   formStyle,
-  inputStyle,
-  buttonStyle,
   titleStyle,
 } from "./LoginForm.styles";
+import Input from "../../components/Input";
+import Button from "../../components/Button";
 
 export default function LoginForm() {
   const [email, setEmail] = useState<string>("");
@@ -28,23 +28,19 @@ export default function LoginForm() {
         <div css={formSectionStyle}>
           <form onSubmit={handleLogin} css={formStyle}>
             <h1 css={titleStyle}>Login</h1>
-            <input
+            <Input
               type="email"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              css={inputStyle}
             />
-            <input
+            <Input
               type="password"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              css={inputStyle}
             />
-            <button type="submit" css={buttonStyle}>
-              Login
-            </button>
+            <Button type="submit">Login</Button>
           </form>
         </div>
       </div>
