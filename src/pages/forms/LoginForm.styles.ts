@@ -15,7 +15,6 @@ export const containerStyle = css`
 export const innerContainerStyle = css`
   display: flex;
   flex-direction: row;
-  background-color: rgba(255, 255, 255, 1);
   border-radius: 32px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 70%;
@@ -32,12 +31,14 @@ export const imageSectionStyle = css`
   background-image: url("https://media.istockphoto.com/id/1144992154/vector/bokeh-background.jpg?s=612x612&w=0&k=20&c=8NEtcQyJlD8ImcE_R9bas16mYt1G-uvu58GvvuEF0Ss=");
   background-size: cover;
   background-position: center;
+  background-color: transparent;
   transform: rotate(180deg);
   height: 100%;
 `;
 
 export const formSectionStyle = css`
   flex: 1;
+  background-color: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: center;
   align-items: center;
