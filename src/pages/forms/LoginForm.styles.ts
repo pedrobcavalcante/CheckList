@@ -7,7 +7,10 @@ export const containerStyle = css`
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #f5f5f5;
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/03/06/12/abstract-2709402_1280.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 export const formStyle = css`
