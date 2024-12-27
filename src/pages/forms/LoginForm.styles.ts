@@ -17,10 +17,17 @@ export const formStyle = css`
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 70%;
+  height: 70%;
+  max-width: 900px;
+  max-height: 1200px;
+  min-width: 500px;
+  min-height: 400px;
+  margin: 0 auto;
+  position: relative;
 `;
 
 export const inputStyle = css`
