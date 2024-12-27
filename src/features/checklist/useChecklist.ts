@@ -1,10 +1,5 @@
 import { useState } from "react";
-
-interface Task {
-  id: number;
-  title: string;
-  completed: boolean;
-}
+import { Task } from "./types/Checklist.types";
 
 export function useChecklist() {
   const [tasks, setTasks] = useState<Task[]>([]);

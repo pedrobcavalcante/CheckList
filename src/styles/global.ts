@@ -8,7 +8,7 @@ export const headerStyle = css`
   padding: 1rem 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   h1 {
-    color: #ffffff; /* Garante que o texto seja branco */
+    color: #ffffff;
   }
 `;
 
@@ -17,7 +17,7 @@ export const mainStyle = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 80px); /* Altura total da viewport menos o cabeçalho */
+  height: calc(100vh - 80px);
   background-color: #f5f5f5;
 `;
 
@@ -33,6 +33,8 @@ export const globalStyles = css`
     width: 100%;
     display: flex;
     flex-direction: column;
+    font-family: Arial, sans-serif; /* Adicionado */
+    background-color: #f5f5f5; /* Adicionado */
   }
   #root {
     flex: 1;
@@ -43,10 +45,10 @@ export const globalStyles = css`
     font-size: 2rem;
     color: #0077cc;
   }
-
   button {
     cursor: pointer;
     border: none;
     outline: none;
+    background: none; /* Adicionado */
   }
 `;

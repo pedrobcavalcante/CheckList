@@ -1,11 +1,14 @@
+import { lazy, Suspense } from "react";
 
-import Checklist from "../features/checklist/Checklist";
+const Checklist = lazy(() => import("../features/checklist/components/Checklist"));
 
 export default function ChecklistPage() {
     return (
         <div>
             <h1>My Checklist</h1>
-            <Checklist />
+            <Suspense fallback={<div>Loading...</div>}>
+                <Checklist />
+            </Suspense>
         </div>
     );
 }

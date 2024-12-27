@@ -1,15 +1,10 @@
 /** @jsxImportSource @emotion/react */
+
 import { useChecklist } from "./useChecklist";
 import { useState } from "react";
-import {
-    containerStyle,
-    inputContainerStyle,
-    inputStyle,
-    addButtonStyle,
-    listStyle,
-    taskStyle,
-    deleteButtonStyle,
-} from "./Checklist.styles";
+import { addButtonStyle, containerStyle, deleteButtonStyle, inputContainerStyle, inputStyle, listStyle, taskStyle, } from "./Checklist.styles";
+
+
 export default function Checklist() {
     const { tasks, addTask, toggleTask, deleteTask } = useChecklist();
     const [newTask, setNewTask] = useState<string>("");
@@ -21,7 +16,6 @@ export default function Checklist() {
 
     return (
         <div css={containerStyle}>
-
             <div css={inputContainerStyle}>
                 <input
                     type="text"
