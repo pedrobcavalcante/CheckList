@@ -7,6 +7,7 @@ import {
   formSectionStyle,
   formStyle,
   titleStyle,
+  inputContainerStyle,
 } from "./LoginForm.styles";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
@@ -28,18 +29,22 @@ export default function LoginForm() {
         <div css={formSectionStyle}>
           <form onSubmit={handleLogin} css={formStyle}>
             <h1 css={titleStyle}>Login</h1>
-            <Input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <Input
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <div css={inputContainerStyle}>
+              <Input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div css={inputContainerStyle}>
+              <Input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
             <Button type="submit">Login</Button>
           </form>
         </div>

@@ -12,17 +12,17 @@ export const containerStyle = css`
   background-position: center;
   background-repeat: no-repeat;
 `;
+
 export const innerContainerStyle = css`
   display: flex;
   flex-direction: row;
   border-radius: 32px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 70%;
-  height: 70%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
   max-width: 900px;
-  max-height: 1200px;
-  min-width: 500px;
-  min-height: 400px;
+  height: 70%;
+  max-height: 800px;
+  min-width: 600px;
   overflow: hidden;
 `;
 
@@ -31,14 +31,13 @@ export const imageSectionStyle = css`
   background-image: url("https://media.istockphoto.com/id/1144992154/vector/bokeh-background.jpg?s=612x612&w=0&k=20&c=8NEtcQyJlD8ImcE_R9bas16mYt1G-uvu58GvvuEF0Ss=");
   background-size: cover;
   background-position: center;
-  background-color: transparent;
   transform: rotate(180deg);
   height: 100%;
 `;
 
 export const formSectionStyle = css`
   flex: 1;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,14 +48,18 @@ export const formSectionStyle = css`
 export const formStyle = css`
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  gap: 1.5rem;
   width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+  max-width: 400px;
 `;
+
 export const titleStyle = css`
-  margin-bottom: 2rem;
-  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
   color: #0077cc;
+  text-align: center;
+`;
+
+export const inputContainerStyle = css`
+  width: 100%;
 `;
