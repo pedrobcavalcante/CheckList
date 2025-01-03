@@ -4,16 +4,9 @@
     {
       "type": "node-terminal",
       "request": "launch",
-      "name": "Start React App",
+      "name": "Run React App",
       "command": "npm start",
       "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "chrome",
-      "request": "launch",
-      "name": "Debug in Chrome",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}/src"
     }
   ]
 }
